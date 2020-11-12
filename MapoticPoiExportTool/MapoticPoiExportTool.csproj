@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject>MapoticPoiExportTool.Program</StartupObject>
+    <Authors>Stepan Borek</Authors>
+    <Product>Mapotic Poi Export Tool</Product>
+    <Description>Unofficial tool to export POIs from Mapotic to KML format.</Description>
+    <PackageLicenseExpression>WTFPL</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/irendie/MapoticPoiExportTool</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/irendie/MapoticPoiExportTool</RepositoryUrl>
+    <PackageTags>mapotic</PackageTags>
+    <Copyright>Stepan Borek 2020</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>
