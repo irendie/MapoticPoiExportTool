@@ -6,7 +6,7 @@ namespace MapoticPoiExportTool.Languages
 {
     class EnglishLanguage : ILanguage
     {
-        string ILanguage.welcomeMessage => "Unofficial Mapotic Export Tool\nVersion 1.1.0\nUse at your own risk\nc2020 - Stepan Borek";
+        string ILanguage.welcomeMessage => "\nUnofficial Mapotic Export Tool\nVersion 1.1.0\nUse at your own risk\nc2020 - Stepan Borek\n";
 
         public string enterEmail => "Enter email: ";
 
@@ -14,9 +14,9 @@ namespace MapoticPoiExportTool.Languages
 
         public string enterMapId => "Enter map ID to export: ";
 
-        public string yourMaps => "\tYour own or followed maps:";
+        public string yourMaps => "\nYour own or followed maps:";
 
-        public string enterCustomMapId => "\n(To get custom map ID open the map in your browser and find cookie with name 'map_id'\nYou can get the cookie by many ways - one of them is running 'alert(document.cookie)' in browser console (F12))";
+        public string enterCustomMapId => "(Any map ID can be found in cookie 'map_id' when you open your map in browser)";
 
         public string processing => "\nProcessing...";
 

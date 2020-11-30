@@ -29,10 +29,6 @@ namespace MapoticPoiExportTool
             _networkManager.login(email, password);
 
             var maps = _dataProcessor.processMaps(_networkManager.getMapsDataObject());
-
-            Console.WriteLine(_lngMngr.lang.enterMapId);
-            Console.WriteLine(_lngMngr.lang.enterCustomMapId);
-
             if (maps.Count > 0)
             {
                 Console.WriteLine(_lngMngr.lang.yourMaps);
@@ -41,6 +37,8 @@ namespace MapoticPoiExportTool
                     Console.WriteLine("\tID: " + map.Key + " | " + map.Value);
                 }
             }
+            Console.WriteLine(_lngMngr.lang.enterCustomMapId);
+            Console.WriteLine(_lngMngr.lang.enterMapId);
             string mapId = Console.ReadLine();
 
             _networkManager.setMapId(mapId);
