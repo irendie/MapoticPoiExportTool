@@ -10,6 +10,8 @@ namespace MapoticPoiExportTool.Languages
         string enterEmail { get; }
         string enterPassword { get; }
         string enterMapId { get; }
+        string yourMaps { get; }
+        string enterCustomMapId { get; }
         string processing { get; }
         string exportedTo { get; }
         string exitMessage { get; }

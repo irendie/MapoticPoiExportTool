@@ -12,7 +12,11 @@ namespace MapoticPoiExportTool.Languages
 
         public string enterPassword => "Enter password (will disappear from console after entering): \n";
 
-        public string enterMapId => "\nTo get you map ID open the map in your browser and find cookie with name 'map_id'\nYou can get the cookie by many ways - one of them is running 'alert(document.cookie)' in console (F12)\nEnter map ID: ";
+        public string enterMapId => "Enter map ID to export: ";
+
+        public string yourMaps => "\tYour own or followed maps:";
+
+        public string enterCustomMapId => "\n(To get custom map ID open the map in your browser and find cookie with name 'map_id'\nYou can get the cookie by many ways - one of them is running 'alert(document.cookie)' in browser console (F12))";
 
         public string processing => "\nProcessing...";
 

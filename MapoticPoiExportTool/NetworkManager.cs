@@ -12,22 +12,25 @@ namespace MapoticPoiExportTool
         private readonly HttpClient _client;
         private string _mapId;
 
-        public NetworkManager(string mapId, string email, string password)
+        public NetworkManager()
         {
             _client = new HttpClient();
+        }
+
+        public void setMapId (string mapId)
+        {
             _mapId = mapId;
-            login(email, password);
         }
 
         private async System.Threading.Tasks.Task<string> getAccessTokenAsync(string email, string password)
         {
-            var values = new Dictionary<string, string>
+            var loginCredentials = new Dictionary<string, string>
             {
                 { "email", email },
                 { "password", password }
             };
 
-            var content = new FormUrlEncodedContent(values);
+            var content = new FormUrlEncodedContent(loginCredentials);
 
             var response = await _client.PostAsync("https://www.mapotic.com/api/v1/auth/login/", content);
 
@@ -46,6 +49,22 @@ namespace MapoticPoiExportTool
         public void login(string email, string password)
         {
             _client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Token", getAccessTokenString(email, password));
+        }
+
+        private async System.Threading.Tasks.Task<string> getMapsAsync()
+        {
+            var response = await _client.GetAsync("https://www.mapotic.com/api/v1/auth/me/");
+
+            var responseString = await response.Content.ReadAsStringAsync();
+
+            return responseString;
+        }
+
+        public JObject getMapsDataObject()
+        {
+            string mapPoiDataString = getMapsAsync().Result;
+            JObject jsonObject = JObject.Parse(mapPoiDataString);
+            return jsonObject;
         }
 
         private async System.Threading.Tasks.Task<string> getMapPoiDataAsync()
