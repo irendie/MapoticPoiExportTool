@@ -10,3 +10,8 @@ This is an early version which supports description in fields with type: textare
 Paths, comments and images are NOT exported at this time. This will be a feature in one of the next updates.
 
 Use at your own risk!
+
+Roadmap:
+* class structure refactoring & optimalization
+* add support for all field types
+* add suport for export to GPX and KMZ (including pictures)
