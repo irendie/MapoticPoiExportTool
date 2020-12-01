@@ -6,7 +6,7 @@ namespace MapoticPoiExportTool.Languages
 {
     class EnglishLanguage : ILanguage
     {
-        string ILanguage.welcomeMessage => "\nUnofficial Mapotic Export Tool\nVersion 1.1.0\nUse at your own risk\nc2020 - Stepan Borek\n";
+        string ILanguage.welcomeMessage => "\nUnofficial Mapotic Export Tool\nVersion 1.0.1\nUse at your own risk\nc2020 - Stepan Borek\n";
 
         public string enterEmail => "Enter email: ";
 

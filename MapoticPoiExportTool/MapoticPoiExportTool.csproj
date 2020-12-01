@@ -7,11 +7,12 @@
     <Authors>Stepan Borek</Authors>
     <Product>Mapotic Poi Export Tool</Product>
     <Description>Unofficial tool to export POIs from Mapotic to KML format.</Description>
-    <PackageLicenseExpression>WTFPL</PackageLicenseExpression>
+    <PackageLicenseExpression></PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/irendie/MapoticPoiExportTool</PackageProjectUrl>
     <RepositoryUrl>https://github.com/irendie/MapoticPoiExportTool</RepositoryUrl>
-    <PackageTags>mapotic</PackageTags>
+    <PackageTags>mapotic, kml, export</PackageTags>
     <Copyright>Stepan Borek 2020</Copyright>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
