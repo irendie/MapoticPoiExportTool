@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Configuration;
 
-namespace MapoticPoiExportTool
+namespace MapoticPoiExportTool.Common
 {
-    class StaticLibrary
+    public static class ConsoleUtils
     {
         public static void ClearLine()
         {

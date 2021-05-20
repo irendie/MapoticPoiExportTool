@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace MapoticPoiExportTool
+namespace MapoticPoiExportTool.Common
 {
-    class StringWriterWithEncoding : StringWriter
+    public class StringWriterWithEncoding : StringWriter
     {
         private Encoding mEncoding;
         public StringWriterWithEncoding(Encoding encoding)

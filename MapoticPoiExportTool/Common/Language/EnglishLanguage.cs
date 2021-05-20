@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MapoticPoiExportTool.Languages
+namespace MapoticPoiExportTool.Common.Language
 {
-    class EnglishLanguage : ILanguage
+    public class EnglishLanguage : ILanguage
     {
-        string ILanguage.welcomeMessage => "\nUnofficial Mapotic Export Tool\nVersion 1.0.1\nUse at your own risk\nc2020 - Stepan Borek\n";
+        string ILanguage.welcomeMessage => "\nUnofficial Mapotic Export Tool\nVersion 2.0.0\nUse at your own risk\nc2020 - Stepan Borek\n";
 
         public string enterEmail => "Enter email: ";
 
@@ -23,5 +23,7 @@ namespace MapoticPoiExportTool.Languages
         public string exportedTo => "\nDONE\nExported to ";
 
         public string exitMessage => "\n\nPress Enter to exit the program...";
+
+        public string ChooseExportFormat => "\nChoose desired export data format: ";
     }
 }

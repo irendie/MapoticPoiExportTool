@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MapoticPoiExportTool.Languages
+namespace MapoticPoiExportTool.Common.Language
 {
-    class CzechLanguage : ILanguage
+    public class CzechLanguage : ILanguage
     {
-        string ILanguage.welcomeMessage => "\nNeoficialni Mapotic Export Tool\nVerze 1.0.1\nPouziti na vlastni nebezpeci\nc2020 - Stepan Borek\n";
+        string ILanguage.welcomeMessage => "\nNeoficialni Mapotic Export Tool\nVerze 2.0.0\nPouziti na vlastni nebezpeci\nc2020 - Stepan Borek\n";
 
         public string enterEmail => "Zadejte email: ";
 
@@ -23,5 +23,7 @@ namespace MapoticPoiExportTool.Languages
         public string exportedTo => "\nHOTOVO\nExportovano do ";
 
         public string exitMessage => "\n\nStisknete Enter pro ukonceni programu...";
+
+        public string ChooseExportFormat => "\nVyberte cílový formát dat: ";
     }
 }
