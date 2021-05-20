@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MapoticPoiExportTool.Model
+﻿namespace MapoticPoiExportTool.Model
 {
     public class CoordinatesModel
     {

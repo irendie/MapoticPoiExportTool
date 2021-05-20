@@ -1,5 +1,4 @@
-﻿using MapoticPoiExportTool.Model;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.Net.Http;
 

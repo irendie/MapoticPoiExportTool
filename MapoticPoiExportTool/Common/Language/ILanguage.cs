@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MapoticPoiExportTool.Common.Language
+﻿namespace MapoticPoiExportTool.Common.Language
 {
     public interface ILanguage
     {

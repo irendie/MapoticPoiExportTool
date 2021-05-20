@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Text;
 using System.Xml.Linq;
 using MapoticPoiExportTool.Model;
-using Newtonsoft.Json.Linq;
 
 namespace MapoticPoiExportTool
 {
